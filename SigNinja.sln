@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigNinja.Core", "SigNinja.Core\SigNinja.Core.csproj", "{5A3DA5A8-45D6-48DE-A846-C7B9170DD77B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A3DA5A8-45D6-48DE-A846-C7B9170DD77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3DA5A8-45D6-48DE-A846-C7B9170DD77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3DA5A8-45D6-48DE-A846-C7B9170DD77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3DA5A8-45D6-48DE-A846-C7B9170DD77B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

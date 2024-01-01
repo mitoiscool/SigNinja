@@ -15,5 +15,7 @@
 # manual
 
 /.idea/
-/SigNinja.Core/bin
-/SigNinja.Core/obj
+/SigNinja.Core/bin/
+/SigNinja.Core/obj/
+/SigNinja.Platforms.AsmResolver/bin/
+/SigNinja.Platforms.AsmResolver/obj/

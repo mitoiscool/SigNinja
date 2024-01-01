@@ -6,9 +6,10 @@
 
 A generic .NET analysis framework for efficient signature creation and identification, aiding in the automatic de-virtualization of VM-based obfuscators.
 
-[Structure](#structure) • 
-[Devirtualization](#devirtualization) • 
-[Examples](#examples) 
+[Generic Structure](#structure) • 
+[Signature Generation](#usage) • 
+[Roadmap](#roadmap) •
+[Credits](#credits)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 [![forthebadge](assets/virtualguard.svg)](https://virtualguard.io/)
@@ -37,6 +38,17 @@ Examples of these can be viewed in the AsmResolver platform, located in `SigNinj
 
 The signature comparer is used to, as stated in the name, compare signatures. By default, it will ensure that a signature has 100% of the identifiers that it shares with another signature. There is an overload to put in a minimum percentage for likeness, which in my mind I would intend to use for obfuscated binaries, where signatures may have slight variations.
 
+## Usage and Signature Generation
 
-## Examples
+I have yet to implement a CLI for this, but when I do, I will populate this tab.
+
+## Roadmap
+
+I intend to add signatures for method bodies, allowing for somebody to essentially de-obfuscate a virtual machine only once, generate signatures on their de-obfuscated code, and then have it work flawlessly after.
+
+
+## Credits
+ - [Washi](https://github.com/Washi1337), for [AsmResolver](https://github.com/Washi1337/AsmResolver)
+
+
 

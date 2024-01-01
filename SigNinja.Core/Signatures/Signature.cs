@@ -1,14 +1,13 @@
-namespace SigNinja.Core;
+namespace SigNinja.Core.Signatures;
 
-public class Signature<T>
+public class Signature
 {
-    
     public bool HasIdentifiers => _identifiers is { Count: > 0 };
     public IIdentifier[] Identifiers => _identifiers.ToArray();
     public int IdentifierCount => _identifiers.Count;
 
     
-    public Signature<T> WithIdentifier(IIdentifier id)
+    public Signature WithIdentifier(IIdentifier id)
     {
         _identifiers.Add(id);
         return this;

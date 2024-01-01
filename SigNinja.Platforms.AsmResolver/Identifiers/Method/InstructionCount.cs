@@ -1,12 +1,16 @@
+using AsmResolver.DotNet;
 using SigNinja.Core.Signatures;
 
 namespace SigNinja.Platforms.AsmResolver.Identifiers.Method;
 
 public class InstructionCount : IIdentifier
-{ // i hate this
-    public InstructionCount(int count)
+{
+    public InstructionCount(MethodDefinition meth)
     {
-        _instructionCount = count;
+        if (meth.CilMethodBody == null)
+            _instructionCount = -1;
+        else
+            _instructionCount = meth.CilMethodBody.Instructions.Count;
     }
 
     public int Identifier => 0;

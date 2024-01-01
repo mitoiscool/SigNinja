@@ -10,7 +10,6 @@ A generic .NET analysis framework for efficient signature creation and identific
 [Examples](#examples)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/for-sharks.svg)](https://forthebadge.com)
 [![forthebadge](assets/virtualguard.svg)](https://virtualguard.io/)
 
 </div>

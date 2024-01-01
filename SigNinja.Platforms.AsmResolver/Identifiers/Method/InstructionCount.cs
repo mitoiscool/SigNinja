@@ -3,7 +3,12 @@ using SigNinja.Core.Signatures;
 namespace SigNinja.Platforms.AsmResolver.Identifiers.Method;
 
 public class InstructionCount : IIdentifier
-{
+{ // i hate this
+    public InstructionCount(int count)
+    {
+        _instructionCount = count;
+    }
+
     public int Identifier => 0;
 
     private int _instructionCount;

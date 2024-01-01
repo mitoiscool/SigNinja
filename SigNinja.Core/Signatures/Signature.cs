@@ -5,7 +5,8 @@ public abstract class SignatureBase
     public bool HasIdentifiers => _identifiers is { Count: > 0 };
     public IIdentifier[] Identifiers => _identifiers.ToArray();
     public int IdentifierCount => _identifiers.Count;
-
+    public string SignatureName;
+    
     
     public SignatureBase WithIdentifier(IIdentifier id)
     {

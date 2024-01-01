@@ -13,13 +13,16 @@ public class SignatureComparer
         _minimumSureness = 100; // default 100% sure
     }
 
-    public bool Compare(Signature sig1, Signature sig2)
+    public bool Compare(SignatureBase sig1, SignatureBase sig2)
     {
         if (!sig1.HasIdentifiers || !sig2.HasIdentifiers)
             throw new ArgumentException("Provided signature has no identifying factors.");
+
+        if (!sig1.GetType().IsAssignableTo(sig2.GetType()))
+            return false; // they are different types, therefore they cannot be equal
         
-        Signature comparerSignature = sig1.IdentifierCount > sig2.IdentifierCount ? sig2 : sig1; // whichever has the lower identifier count
-        Signature compareeSignature = comparerSignature == sig1 ? sig2 : sig1; // opposite of comparer
+        SignatureBase comparerSignature = sig1.IdentifierCount > sig2.IdentifierCount ? sig2 : sig1; // whichever has the lower identifier count
+        SignatureBase compareeSignature = comparerSignature == sig1 ? sig2 : sig1; // opposite of comparer
 
         int sureness = 0;
         int perCorrectPercentage = 100 / comparerSignature.IdentifierCount;

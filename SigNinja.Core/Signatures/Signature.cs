@@ -1,13 +1,13 @@
 namespace SigNinja.Core.Signatures;
 
-public class Signature
+public abstract class SignatureBase
 {
     public bool HasIdentifiers => _identifiers is { Count: > 0 };
     public IIdentifier[] Identifiers => _identifiers.ToArray();
     public int IdentifierCount => _identifiers.Count;
 
     
-    public Signature WithIdentifier(IIdentifier id)
+    public SignatureBase WithIdentifier(IIdentifier id)
     {
         _identifiers.Add(id);
         return this;
@@ -22,5 +22,5 @@ public class Signature
         return null;
     }
 
-    private HashSet<IIdentifier> _identifiers;
+    private readonly HashSet<IIdentifier> _identifiers = new HashSet<IIdentifier>();
 }

@@ -4,6 +4,6 @@ namespace SigNinja.Core.Serialization;
 
 public interface ISignatureSerializer
 {
-    public byte[] Serialize(Signature signature);
-    public Signature Deserialize(byte[] bytes);
+    public byte[] Serialize(SignatureBase signature);
+    public SignatureBase Deserialize(byte[] bytes);
 }

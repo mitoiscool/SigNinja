@@ -7,7 +7,7 @@
 A generic .NET analysis framework for efficient signature creation and identification, aiding in the automatic de-virtualization of VM-based obfuscators.
 
 [Generic Structure](#structure) • 
-[Signature Generation](#usage) • 
+[Signature Generation](#usage-and-signature-generation) • 
 [Roadmap](#roadmap) •
 [Credits](#credits)
 
